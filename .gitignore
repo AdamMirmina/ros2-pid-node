@@ -1,0 +1,32 @@
+# ===== PYTHON =====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===== VIRTUAL ENVS =====
+venv/
+env/
+.env/
+
+# ===== ROS2 / COLCON =====
+build/
+install/
+log/
+
+# ===== EDITOR / SYSTEM =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.lnk
+*.bak
+
+# ===== TEST / COVERAGE =====
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== NOTEBOOKS =====
+.ipynb_checkpoints/
