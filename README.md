@@ -1,4 +1,4 @@
-# ROS2 PID Node
+# ROS 2 PID Node
 A proof-of-concept PID controller node built as my Lunabotics onboarding project.
 Demonstrates ROS 2 publishers, subscribers, and basic control logic.
 
