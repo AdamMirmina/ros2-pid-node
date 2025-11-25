@@ -53,7 +53,7 @@ class PIDController(Node):
         self.integral += error * dt # Keep track of error over time
         derivative = (error - self.previous_error) / dt if dt > 0 else 0.0 # How fast is the error changing?
 
-        output = P + (self.Ki * self.integral) + (self.Kd * derivative) # Add everything together: P- move toward target, I: fix leftover offset, D: smooth it so we don't overshoot
+        output = P + (self.Ki * self.integral) + (self.Kd * derivative) # Add everything together: P: move toward target, I: fix leftover offset, D: smooth it so we don't overshoot
 
         self.previous_error = error # Saves current error so next time we can compute the derivative
         return output
